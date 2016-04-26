@@ -10,7 +10,7 @@ from decimal import *
 
 # returns an string of the converter module
 def converter_module(input_size, fraction, lut_size, rangesize):
-
+  # range size defines the range of values into the sigmoid unit
   input_max   = int(input_size)-1
   lut_max     = int(int.bit_length(int(lut_size)-1)) - 1
   integer_part = int(int.bit_length(int(rangesize)-1)) - 1
